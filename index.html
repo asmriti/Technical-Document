@@ -13,28 +13,44 @@
   </head>
   <body>
     <main id="main-doc">
-      <section class="main-section">
+      <section class="main-section nav-edit">
         <nav id="navbar">
-          <!-- <div class="container"> -->
-          <header>
-            <div class="icons">
-              <i class="fab fa-github"></i>
-            </div>
+          <div class="container">
+            <header>
+              <div class="icons">
+                <i class="fab fa-github"></i>
+              </div>
+              <div>
+                <h2 class="margin-left">Git and Github Documentation</h2>
+              </div>
+            </header>
 
-            <h2>Git and Github Documentation</h2>
-          </header>
-
-          <ul>
-            <li><a class="nav-link" href="#introduction">Introduction</a></li>
-            <li><a class="nav-link" href="#prerequisites">Prerequisites</a></li>
-          </ul>
-          <!-- </div> -->
+            <ul>
+              <li><a class="nav-link" href="#introduction">Introduction</a></li>
+              <li>
+                <a class="nav-link" href="#prerequisites">Prerequisites</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#install_a_git"
+                  >How to install a git</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="#configure_git"
+                  >How to configure a git</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </section>
 
-      <section id="introduction">
+      <section class="main-section">
         <div class="container">
-          <h3>Introduction</h3>
+          <header id="introduction">
+            <h3>Introduction</h3>
+          </header>
+
           <p>
             Git and GitHub are two technologies that every developer should
             learn, irrespective of their field.Git is a version control system
@@ -65,9 +81,11 @@
         </div>
       </section>
 
-      <section id="prerequisites">
+      <section class="main-section">
         <div class="container">
-          <h3>Prerequisites to initialize a git</h3>
+          <header id="prerequisites">
+            <h3>Prerequisites to initialize a git</h3>
+          </header>
 
           <ol>
             <li>
@@ -78,15 +96,19 @@
               >
             </li>
             <li>Configure a git</li>
-            <li></li>
-            <li></li>
+            <li>Create and initialize a project</li>
+            <li>Push a repository</li>
+            <li>Push a existing repository</li>
           </ol>
         </div>
       </section>
 
-      <section id="install_a_git">
+      <section class="main-section">
         <div class="container">
-          <h3>How to install a git</h3>
+          <header id="install_a_git">
+            <h3>How to install a git</h3>
+          </header>
+
           <p>
             In order to use git, you should first install git. Git is easily
             available on the internet.You can download it for your operating
@@ -95,9 +117,12 @@
         </div>
       </section>
 
-      <section id="configure_git">
+      <section class="main-section">
         <div class="container">
-          <h3>How to configure a git</h3>
+          <header id="configure_git">
+            <h3>How to configure a git</h3>
+          </header>
+
           <p>
             After you install git, the next thing you'll need to do is to set
             your username and email address on the command line or command
@@ -114,9 +139,12 @@
         </div>
       </section>
 
-      <section id="initialize">
+      <section class="main-section">
         <div class="container">
-          <h3>How to create and initialize a project in git</h3>
+          <header id="initialize">
+            <h3>How to create and initialize a project in git</h3>
+          </header>
+
           <p>
             First to create a project I would like to suggest you to download
             Visual Studio Code in your desktop.It is a code editor which has an
@@ -133,8 +161,80 @@
             watching your files for every change that occurs. It looks like
             this:
           </p>
+          <img src="img/Screenshot_47.png" alt="gitinit" class="gitinit" />
+          <p>
+            The first line has information about my PC and the path to where the
+            folder exists and also the command <code> git init </code> , and the
+            second line is the response sent back telling me that my repository
+            (repo) has been initialized. It is considered empty because we have
+            not told Git what files to track.
+          </p>
         </div>
       </section>
+
+      <section class="main-section">
+        <div class="container">
+          <header id="push_a_repository">
+            <h3>How to push a repository to GitHub</h3>
+          </header>
+
+          <div class="steps">
+            <h4>Step 1: Create a Github account</h4>
+            <p>You need to create a account of Github first.</p>
+            <h4>Step 2: Create a repository</h4>
+            <p>
+              You can click on the <code>+</code> sign on the top corner and
+              then choose on the "New repository". Give your repo a name and
+              click on the "Create a repository" button.
+            </p>
+            <h4>Step 3:Adding and Committing files</h4>
+            <p>
+              <b>Add files:</b>
+              When we first initialized our project, the file was not being
+              tracked by Git. To do that, we use this command
+              <code>git add .</code>To know what state your file is in, you can
+              run the <code> git status </code> command.
+            </p>
+            <p>
+              <b>Commit files:</b>To commit our file, we use the
+              <code>git commit -m "first commit"</code> command.
+            </p>
+            <h4>Step 4:Push the repository to github</h4>
+            <p>
+              After you create the repo, you should be redirected to a page that
+              tells you how to create a repo locally or push an existing one.
+            </p>
+            <p>
+              In our case, the project already exists locally so we will use
+              commands in the "…or push an existing repository from the command
+              line" section. These are the commands:
+            </p>
+            <div class="block">
+              <code>
+                <span>git add README.md </span>
+                <span> git commit -m "first commit" </span>
+                <span> git branch -M main </span>
+                <span>
+                  git remote add origin https://github.com/asmriti/hi.git
+                </span>
+                <span>git push -u origin main </span>
+              </code>
+            </div>
+            <h4>Step 5: To add</h4>
+            <p>
+              After we make changes to the file, we again need to add the file
+              to our existing repository. So for that, again on the command
+              interface we need to command the following:
+            </p>
+            <code>
+              <span>git add .</span>
+              <span>git commit -m "Initial Commit"</span>
+              <span>git push origin main</span>
+            </code>
+          </div>
+        </div>
+      </section>
+      <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
     </main>
   </body>
 </html>

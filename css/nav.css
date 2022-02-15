@@ -1,0 +1,36 @@
+ul li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+}
+
+.icons {
+  font-size: 40px;
+}
+
+.margin-left {
+  margin-left: 20px;
+}
+
+.nav-edit ul li a:hover{
+  color:aliceblue;
+  background-color: var(--dark-blue);
+}
+
+.nav-edit ul li a{
+  color:var(--light-blue);
+  padding: 5px 10px;
+}
+
+.nav-edit ul li {
+
+  margin-top:5px;
+}
+
+.nav-edit ul{
+  display: flex;
+  justify-content: space-between;
+  width:50%;
+}
