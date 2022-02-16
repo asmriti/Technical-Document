@@ -3,4 +3,11 @@
   font-size: 20px;
 }
 
+.prerequisites ol li a {
+  color: var(--theme-color);
+  text-decoration: underline;
+}
 
+.prerequisites ol li a:hover {
+  color: #a1887f;
+}
