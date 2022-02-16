@@ -1,0 +1,8 @@
+.configure .codes code span  {
+  display:block;
+  padding:10px;
+}
+
+.codes{
+  background-color: aliceblue;
+}

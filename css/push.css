@@ -1,4 +1,13 @@
 .steps code span {
   display:block;
   background-color: aliceblue;
+  padding:10px;
 } 
+
+.push h4{
+  padding-top: 14px;
+}
+
+.push p{
+  margin-top:5px;
+}

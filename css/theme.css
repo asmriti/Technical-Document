@@ -30,6 +30,11 @@ h6 {
   color: var(--dark-blue);
 }
 
+header{
+  font-family: var(--heading-font);
+
+}
+
 body {
   font-family: var(--content-font);
   color: var(--theme-color);

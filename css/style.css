@@ -4,12 +4,24 @@ a {
 
 p {
   font-size: 20px;
-  margin: 15px;
-  line-height: 25px;
- 
+  margin-bottom:15px;
+
+  line-height: 30px;
 }
 
 code {
   background-color: aliceblue;
   font-size: 20px;
 }
+
+.align-cemter {
+  text-align: center;
+}
+
+.main-section header{
+  font-size:26px;
+  padding-bottom: 10px;
+  font-weight:bolder;
+  
+}
+
