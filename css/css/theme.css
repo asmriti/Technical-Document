@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Source+Serif+4:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1203px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+:root {
+  --theme-color: #015958;
+  --light-blue: #0fc2c0;
+  --dark-blue: #023535;
+  --code-font:"Monospace";
+  --heading-font:"Source serif 4",sans-serif;
+  --content-font:"Cormorant Garamond",sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color:var(--dark-blue);
+}
+
+body {
+  font-family: var(--content-font);
+}
